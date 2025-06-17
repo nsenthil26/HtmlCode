@@ -1,0 +1,33 @@
+<!DOCTYPEhtml>
+<html lang="en">
+<head>
+<script> 
+function animate(){
+    var val=window.getComputedStyle(document.getElementById('text')).fontSize; 
+    var fontsize=parseInt(val);
+    var state="growing";
+    var timer=setInterval(textanimate,100); 
+    function textanimate() {
+        if(state=="growing") {
+           fontsize++; 
+	   document.getElementById('text').innerHTML="TEXTGROWING"; 
+	   document.getElementById('text').style.color="red";
+	   document.getElementById('text').style.fontSize=fontsize+"pt";
+	}
+	if(state=="shrinking"){
+	   fontsize--; 
+	   document.getElementById('text').innerHTML="TEXTSHRINKING"; 
+	   document.getElementById('text').style.color="blue";
+	  document.getElementById('text').style.fontSize=fontsize+"pt";
+	}
+	if(fontsize==50){state="shrinking"}
+	if(fontsize==5) {clearInterval(timer);}
+  }
+}
+</script>
+</head>
+<body onload="animate()">
+<h1 style="text-align:center">Program for Increasing/Decreasing size of a text</h1>
+<p style="text-align:center;" id="text"></p>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registraion Form</title>
+        <style>
+        h2{
+            background-color: yellow;
+        }        
+     </style>
+    <script type = "text/javascript">
+   <!--
+      // Form validation code will come here.
+      function validate() {
+            alert(document.myForm.fname.value)
+      
+         if( document.myForm.fname.value == "" ) {
+            alert( "Please provide your name!" );
+            document.myForm.fname.focus() ;
+            
+         }
+}
+   </script>
+    </head>
+    <body>
+     <form   name = "myForm" onsubmit = "validate();">
+        <h2 align="center">Registraion Form</h2>
+        <fieldset>
+            <legend>
+               <b>Cndidate Information</b>             
+            </legend>
+        <label>First Name:</label>
+        <input type="text" name="fname"><br><br>
+        <label>Middle Name:</label>
+        <input type="text" name="mname"><br><br>
+        <label>Last Name:</label>
+        <input type="text" name="lname"><br><br>
+        <label>Gender</label>
+        <select>
+           <option value="select Gender">Select Gender</option>
+           <option>Male</option>
+           <option>Female</option>
+        </select><br><br>
+        <label>Married:</label><br>
+        <input type="radio" name="radio">Yes<br>
+        <input type="radio" name="radio">No<br>
+        <label><br>
+        Phone:
+        <input type="text" name="country code" value="+91" size="2"/>
+        <input type="text" name="number"><br><br>
+        </label>
+        <label>
+        Date of Birth:
+        <input type="date" value="date"><br><br>
+    </label>
+        <label>
+            Blood Group
+        <select>
+            <option value="Blood Group">Blood Group</option>
+            <option>A+</option>
+            <option>AB+</option>
+            <option>O+</option>
+            <option>AB-+</option>
+            <option>A-</option>
+            <option>o-</option>
+        </select><br><br>
+    </label>
+        <label>
+            Address:<br>
+        <textarea name="Address" size="10px"></textarea>
+        </label><br><br>
+        <label>
+        Email:<input type="Email" id="email"><br><br>
+        </label>
+        <label>
+        Caste:<input type="text" id="caste" name="caste"><br><br>
+    </label>
+        Category:<input type="text" id="category" name="category"><br><br>
+        Nationality:<input type="text" id="nationality" name="nationality"><br><br>
+    </label><br><br>
+        <label>Course</label>
+        <select>
+            <option>CSE</option>
+            <option>Mech</option>
+            <option>Civil</option>
+            <option>Elec</option>
+            <option>E&TC</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend><b>Qualification Details</b></legend>
+        <table>
+            <tr>
+                <th> </th>
+                <th>Board</th>
+                <th>Percentage</th>
+                <th>Year of Passing</th>
+            </tr>
+            <tr>
+            <td>10th</td>  
+            <td><input type="text" name="10-Board"></td>
+            <td><input type="text" name="10-Percentage"></td>
+            <td><input type="text" name="Year of passing"></td>
+            </tr> 
+            <tr>
+                <td>12th</td>  
+                <td><input type="text" name="12-Board"></td>
+                <td><input type="text" name="12-Percentage"></td>
+                <td><input type="text" name="Year of passing"></td>
+                </tr>
+                <tr>
+                    <td>Graduation</td>  
+                    <td><input type="text" name="Board"></td>
+                    <td><input type="text" name="Percentage"></td>
+                    <td><input type="text" name="Year of passing"></td>
+                    </tr>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend><b>Parent Information</b></legend>
+        <label>
+            Fullname:<input type="text" name="fname"><br><br>
+        </label>
+        <label>
+            Education:<input type="text" name="f=ename"><br><br>
+        </label>
+        <label>
+            Relation with Student:<input type="text" name="rname"><br><br>
+        </label>
+        Job Type:
+        <select>
+            <option value="Job Type">Job Type</option>
+            <option value="Business">Business</option>
+            <option value="Job">Job</option>
+            <option value="Farmer">farmer</option>
+        </select><br><br>
+        <label>
+            Anuual Income:<input type="text" name="ai">
+        </label><br><br>
+        <label> 
+            Address:<br>
+            <textarea name="Enter the Address" size="10px"></textarea>
+        </label><br><br>
+        <label>
+            Contact No:
+            <input type="text" name="country code" value="+91" size="2"/>
+            <input type="text" name="number"><br><br>
+            </label>
+            <label>
+                E-mail:
+                <input type="text" name="email">
+            </label>
+
+        </fieldset><br><br>
+    <input type="submit" name="submit">
+</form>
+    </body>
+</html>
